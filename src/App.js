@@ -1,11 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './components/Header'
+import Balance from './components/Balance'
+import AccountSummary from './components/AccountSummary'
+import TransactionHistory from './components/TransactionHistory'
+import AddTranscation from './components/AddTransaction'
 
 function App() {
   return (
     <div className="App">
 
-        <h1> Hello world</h1>
+
+        <Header/>
+
+        <div className="container">
+
+            <Balance/>
+            <AccountSummary/>
+            <TransactionHistory />
+            <AddTranscation/>
+
+        </div>
     </div>
   );
 }
